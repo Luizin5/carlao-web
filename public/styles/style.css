@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body{
+  background-color: #252525;
+}
+
+.container{
+  border: 1px solid white;
+  height: 1080px;
+  
+  display: block;
+  padding: 10px;
+}
+
+.item{
+  width: 100%;
+  /*border:1px solid green;*/
+  height: 150px;
+}
+
+.item p{
+  font-family: "Ubuntu", Sans-Serif;
+}
+
+
+.item2{
+  height: 100px;
+}
+
+.vaiAparecerQuandoOsiteCarregar{
+  color:white;
+  animation: fadein 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes fadein{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+
+
+img{
+  height: 130px;
+  width: 130px;
+  border-radius: 2px;
+  position: relative;
+  top: 10px;
+  transition: all 0.4s;
+  box-shadow:0px 0px 0px;
+  cursor: pointer;
+}
+
+img:hover,
+focus{
+  box-shadow: 0px 0px 5px #cccccc;
+  width: 140px;
+  height: 140px;
+}
+
+.vermelho{
+  color:cyan;
+  /*text-decoration: underline;*/
+}
+
+/*button{
+  height:38px;
+  width: 110px;
+  border:none;
+  background: rgba(0,221,51,0.559);
+  color: white;
+  transition:all 1s;
+  box-shadow: #004400c8 3px 3px 0px;
+  outline: none;
+}
+
+button:hover,
+focus{
+  box-shadow: 0px 0px 0px #004400c8;
+}*/
+
+button{
+  height:38px;
+  width: 110px;
+  border:1px solid white;
+  border-radius: 2px;
+  background-color: transparent;
+  color: white;
+  transition:all 0.7s;
+  /*box-shadow: yellow 1px 1px 0px;*/
+  outline: none;
+}
+
+button:hover,
+focus{
+  color: black;
+  background: white;
+  
+  width: 115px;
+  height: 40px;
+}
+
+.carlos{
+  font-family: "Pacifico",cursive;
+}
+
+.partedebaixo{
+  position: relative;
+  top: 300px;
+}
+
+.meio{
+  position: relative;
+  top: 90px;
+  opacity: 0;
+}
+
+.meio2{
+  position:relative;
+  top:90px;
+  opacity:0;
+  animation:mmeio 2s;
+}
+
+@keyframes mmeio{
+  0%{
+    opacity:0;
+  }
+  50%{
+    opacity:1;
+  }
+  100%{
+    opacity:0;
+  }
+}
