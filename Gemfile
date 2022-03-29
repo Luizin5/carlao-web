@@ -5,6 +5,10 @@ source "https://rubygems.org"
 # gem "rails"
 
 gem "sinatra"
-gem "sqlite3"
+gem "pg"
 gem "puma"
 
+
+group :development do
+  gem "sqlite3"
+end
