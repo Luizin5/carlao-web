@@ -7,4 +7,4 @@ source "https://rubygems.org"
 gem "sinatra"
 gem "pg", :group=> :production
 gem "puma"
-gem "sqlite3", :grouo=> :development
+gem "sqlite3", :group=> :development
