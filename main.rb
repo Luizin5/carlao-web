@@ -1,7 +1,7 @@
 require "sinatra"
-require "sqlite3"
+require "pg"
 
-db = SQLite3::Database.new "db/db.db"
+db = PG::Connection.new(:host => "ec2-54-157-79-121.compute-1.amazonaws.com", :user => "kedocpfwhwvgjd", :dbname => "db6d43q8s9idev", :port => "5432", :password => "7162fc6671eedf6a89869200d4fe6594becb3a3e2fc26ba36e5abb4ec95d01bf")
 
 get "/" do
   erb :index
@@ -12,7 +12,7 @@ get "/review" do
 end
 
 post "/post" do 
-  db.execute("insert into coments values(\"#{params[:nome]}\",\"#{params[:coment]},\")")
+  db.exec("insert into reviews(nome, review) values('#{params[:nome]}','#{params[:coment]}')")
 
   puts "nome: #{params[:nome]}\navaliação: #{params[:coment]}"
 

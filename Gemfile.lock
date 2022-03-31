@@ -16,7 +16,6 @@ GEM
       rack (~> 2.2)
       rack-protection (= 2.2.0)
       tilt (~> 2.0)
-    sqlite3 (1.4.2)
     tilt (2.0.10)
 
 PLATFORMS
@@ -27,7 +26,6 @@ DEPENDENCIES
   pg
   puma
   sinatra
-  sqlite3
 
 BUNDLED WITH
    2.3.3
