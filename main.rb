@@ -1,7 +1,7 @@
 require "sinatra"
 require "pg"
 
-db = PG::Connection.new(:host => "ec2-54-157-79-121.compute-1.amazonaws.com", :user => "kedocpfwhwvgjd", :dbname => "db6d43q8s9idev", :port => "5432", :password => "7162fc6671eedf6a89869200d4fe6594becb3a3e2fc26ba36e5abb4ec95d01bf")
+db = PG::Connection.new(:host => "host.", :user => "user.", :dbname => "dbname.", :port => "5432", :password => "password")
 
 get "/" do
   erb :index
